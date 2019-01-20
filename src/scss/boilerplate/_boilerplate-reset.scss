@@ -1,0 +1,19 @@
+//Bug Fix for CSS3 transitions affecting other text elements.
+body {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+// When using image maps, do not show focused elements.
+area:focus {
+    outline: none;
+}
+
+// Prevent Underline on hover if icons are under links.
+// This is only applicable if the project uses icomoon. Remove if not
+i[class^='icon-'] {
+    display: inline-block;
+    line-height: 1.5; // Line height should be equivalent to the Bootstrap default line height.
+}

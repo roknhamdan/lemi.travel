@@ -1,0 +1,114 @@
+// Fonts
+@import 'fonts';
+// Animations
+@import 'animations';
+// Utilities
+@import 'utilities';
+// Javascript Applied Styles
+@import 'js';
+// Custom Styles
+@import 'custom';
+
+//
+// Utility classes
+//
+
+// Section Padding
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.logo-container > svg {
+    width: 37px;
+    height: 37px;
+}
+
+.mw-centered {
+    max-width: 770px;
+}
+
+.line-height-lg {
+    line-height: 1.8;
+}
+
+.alt-dark-bg {
+    background: #252525;
+}
+
+//
+// Specific CSS
+//
+
+// Download from Apple Store Badge.
+.app-badge svg {
+    width: 180px;
+    height: 60px;
+}
+
+// Match the logo size
+#navbar-logo-container svg {
+    width: 100px;
+    height: 37px;
+}
+
+// Hero Background
+#hero {
+    // Padding top for fixed navbar
+    padding-top: (53px) * 2;
+    // Background
+    background: url('../img/cover.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    // Any child column must have a minimum height
+    & .col {
+        min-height: 40rem;
+    }
+}
+
+// Unique colors on the Instagram photos section.
+#instagram-section {
+    background: #161616;
+}
+
+// Carousel controls must be centered.
+#carousel-pagination {
+    top: 50%;
+}
+
+// Carousel Images must be centered on the screen.
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+// Carousel Items must not peek through the sides.
+.owl-carousel .owl-item {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+
+// Modal Backdrop must be completely black
+.modal-backdrop.show,
+.modal-content {
+    background: black;
+    opacity: 1;
+}
+
+// Style the cursor according to the available user actions..
+.button-cursor span {
+    cursor: pointer;
+}
+.js-instagram-clickable {
+    cursor: zoom-in;
+}
+
+// Footer links must be white.
+#footer a {
+    color: white;
+}
+// The footer logo size.
+#footer-logo svg {
+    width: 40px;
+    height: 37px;
+}

@@ -1,0 +1,30 @@
+// Add angled edges to elements using bootstrap's colors and angeld-edges.
+
+// Location List
+$angled-edge-location: (
+    it: 'inside top',
+    ot: 'outside top',
+    ib: 'inside bottom',
+    ob: 'outside bottom'
+);
+// Hypotenuse List
+$angled-edge-hypotenuse: (
+    up: 'upper left',
+    ur: 'upper right',
+    ll: 'lower left',
+    lr: 'lower right'
+);
+
+// Requires Bootstrap 4 or other scss that makes available a map of colors($theme-colors).
+// Create a class for each possible use using a nested each function.
+// Each is a map pair. Get the class, Get the value in list.
+// Use angled-edge-$location-$hypotenuse-color classes coupled with p-* and m-* classes on the previous or next elements to get angled edges on any element.
+@each $location-class, $location in $angled-edge-location {
+    @each $hypotenuse-class, $hypotenuse in $angled-edge-hypotenuse {
+        @each $fill, $fill-color in $theme-colors {
+            .angled-edge-#{$location-class}-#{$hypotenuse-class}-#{$fill} {
+                @include angled-edge($location, $hypotenuse, $fill-color);
+            }
+        }
+    }
+}

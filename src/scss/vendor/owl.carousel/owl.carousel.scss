@@ -1,0 +1,8 @@
+// Overrides
+@import 'overrides';
+// Framework
+@import '../../../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+// Theme
+@import '../../../../node_modules/owl.carousel/src/scss/owl.theme.default';
+// Custom Styles to further extend it.
+@import 'custom';

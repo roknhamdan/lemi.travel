@@ -1,0 +1,93 @@
+// Globally available variables to all other SCSS files.
+
+// Guidelines
+// Typography Guides. Not actually used.
+$global-typography-style-guide: (
+    // Hero text with few elements beside it
+
+        'Hero Heading': 'h1.text-color-darker-primary.display-3',
+    // Typically beside other elements in a hero-esque setting with other elements.
+
+        'Page Heading': 'h1',
+    // Section Heading must seperate elements.
+
+        'Section Heading':
+        '<h2.font-weight-bold.text-color-darker-primary.display-4',
+    // Content Heading
+
+        'Content Heading': 'h3',
+    // Content Description
+
+        'Content Description': 'h4',
+    // Regular Text
+
+        'Regular Text': 'p'
+);
+// Spacing Guides. Not actually used.
+$global-spacing-style-guide: (
+    //
+
+        // Vertical Spacing
+
+        //
+
+        //
+
+        // Seperate Sections
+
+        'Section Seperation': 'container-fluid.my-5, first-element.my-5',
+    // Seperate Content within the same Section
+
+        'Content Seperation Vertical': 'my-4',
+    // Seperate elements vertically
+
+        'Element Seperation Vertical': 'my-2',
+    // Seperate lists
+
+        'List Seperation Vertical': 'my-1',
+    //
+
+        // Horizontal Spacing
+
+        //
+
+        //
+
+        // Seperate Content within the same Section
+
+        'Content Seperation Horizontal': 'mx-4',
+    // Seperate elements horizontally
+
+        'Element Seperation Horizontal': 'mx-2',
+    // Seperate lists
+
+        'List Seperation Horizontal': 'mx-1'
+);
+
+//
+// Colors
+//
+// Primary Color
+$global-primary-color: #00cb4a;
+// Darker variant of the primary color.
+$global-primary-darker-color: darken($global-primary-color, 5%);
+// Secondary to pop out the colors of the primary
+$global-secondary-color: #e81123;
+// Neutral Light Color typically used for backgrounds.
+$global-light-color: #eeeeee;
+// Dark Color
+$global-dark-color: darken($global-light-color, 75%);
+$global-dark-color: #252525;
+
+// Contextual Colors
+$global-danger-color: #d50000;
+$global-warning-color: #ffd600;
+$global-success-color: #64dd17;
+
+//
+// Typography
+//
+// Font Size Base
+$global-font-size-base: 18px;
+// The default line height
+$global-line-height: 2;

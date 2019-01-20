@@ -1,0 +1,36 @@
+//
+// Color system
+//
+$primary: $global-primary-color;
+$secondary: $global-secondary-color;
+$light: $global-light-color;
+$dark: $global-dark-color;
+// A darkver version of Primary which is typically used in text elements.
+$color-darker-primary: $global-primary-darker-color;
+// Add theme colors to map so that they can be used with bg, text and other classes.
+$theme-colors: (
+    'color-darker-primary': $color-darker-primary
+);
+// Contextual Colors
+$danger: $global-danger-color;
+$warning: $global-warning-color;
+$success: $global-success-color;
+
+$font-family-sans-serif: 'helvetica ', sans-serif;
+
+// Button Customizations
+// No borders
+$btn-border-width: 0rem;
+// No active box-shadow
+$input-btn-focus-width: 0rem;
+$input-btn-focus-color: transparent;
+
+// Rounded buttons and forms.
+$custom-border-radius: 30px;
+
+// Rounded Buttons
+$btn-border-radius: $custom-border-radius;
+$btn-border-radius-lg: $custom-border-radius;
+$btn-border-radius-sm: $custom-border-radius;
+
+

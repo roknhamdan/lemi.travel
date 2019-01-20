@@ -1,0 +1,38 @@
+// Extend Float Labels
+
+// Default Values
+$float-labels: () !default;
+
+$float-labels-defaults: (
+    base-height: 24px,
+    base-padding: 6px,
+    border-radius: 3px,
+    border-width: 1px,
+    margin-bottom: 24px,
+    color-background: #fff,
+    color-background-active: #fff,
+    color-background-focus: #fff,
+    color-border: #dfdfdf,
+    color-border-active: #dfdfdf,
+    color-border-focus: #1976d2,
+    color-placeholder: #bbb,
+    color-required: #d32f2f,
+    color-text: #444,
+    color-text-focus: #1976d2,
+    line-height: 1.5,
+    font-size: 16px,
+    font-size-small: 12px,
+    font-weight: 400,
+    parent: '',
+    prefix: 'fl-',
+    transition-easing: ease-in-out,
+    transition-speed: 0.2s
+);
+
+// Add custom values
+$float-labels: (
+    color-placeholder: #6f6f6f,
+    color-text-focus: $global-primary-color,
+    color-text: #1c1c1c,
+    font-size: inherit
+);

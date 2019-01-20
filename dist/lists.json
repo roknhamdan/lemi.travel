@@ -1,0 +1,20 @@
+{
+    "uid1": {
+        "country": "BANGKOK",
+        "imgUrl": "resized75-f7e7f082224912aadb391ae65ab58cd2-upload-1524628216892.jpg",
+        "place": "The Wats of Bangkok",
+        "content": "Find pockets of peace amidst the chaos of the city inside some of Bangkok’s most revered shrines. Frequented by locals, tourists, and devout worshippers, there’s plenty to appreciate in these sacred structures and the grounds that surround them. From their striking architecture to the impeccable detailing; their historical value, and local religious significance, these majestic temples will inspire you to learn more about Thailand and its rich culture."
+    },
+    "uid2": {
+        "country": "UNITED KINGDOM",
+        "imgUrl": "resized75-656cdc7fa3f8cf0a72b47e91a710681a-upload-1530599165391.jpg",
+        "place": "United (Kingdom) Food Champs",
+        "content": "Amongst historical palaces, old monuments, and lush green lands, the United Kingdom is a hub of culinary masterpieces. Here, we’ve curated 2018’s best of the best with a little help from The Michelin Guide, San Pellegrino’s The World’s 50 Best Restaurants, and The Good Food Guide."
+    },
+    "uid3": {
+        "country": "PUNTA ARENAS, DUNEDIN",
+        "imgUrl": "resized75-37c7f89edce25b9497eb63085cad03a8-upload-1536056385992.jpg",
+        "place": "Wonders of the White Continent",
+        "content": "Far away from congested cities and the frenetic grind, Antarctica is an untamed desert that takes your breath away at every vista. Tap the actual South Pole; waddle with penguins; kayak in turquoise waters amidst humpback whales; and, camp out under a sea of stars! There is plenty to do on The White Continent at the bottom of the Earth."
+    }
+}

@@ -1,0 +1,14 @@
+// Hamburgers
+// Hamburger Styling
+// Bootstrap button styling conflict
+.hamburger {
+    outline: none !important;
+}
+
+// Change color on active.
+// Only the psuedo elements Before and After remain after it toggles so only style those.
+// Class is applied by the plugin.
+.hamburger.is-active .hamburger-inner:before,
+.hamburger.is-active .hamburger-inner:after {
+    background: $global-dark-color;
+}

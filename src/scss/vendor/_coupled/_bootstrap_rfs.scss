@@ -1,0 +1,26 @@
+// Adjust font size of bootstrap elements using RFS.
+.display-1 {
+    @include responsive-font-size(6rem);
+}
+.display-2 {
+    @include responsive-font-size(5.5rem);
+}
+.display-3 {
+    @include responsive-font-size(4.5rem);
+}
+.display-4 {
+    @include responsive-font-size(3.5rem);
+}
+.lead,
+.blockquote {
+    @include responsive-font-size($global-font-size-base * 1.25);
+}
+.btn {
+    @include responsive-font-size($global-font-size-base);
+}
+.btn-lg {
+    @include responsive-font-size($global-font-size-base * 1.25);
+}
+.btn-sm {
+    @include responsive-font-size($global-font-size-base * 0.875);
+}

@@ -1,0 +1,75 @@
+// When using floating-labels.js style 1, the Bootstrap 4 box shadow intersects with the label so remove it.
+// Classes grabbed from inspector tools.
+// .form-control:focus,
+// .was-validated .form-control:invalid:focus,
+// .form-control.is-invalid:focus,
+// .was-validated .custom-select:invalid:focus,
+// .custom-select.is-invalid:focus,
+// .was-validated .form-control:valid:focus,
+// .form-control.is-valid:focus,
+// .was-validated .custom-select:valid:focus,
+// .custom-select.is-valid:focus {
+//     box-shadow: none;
+// }
+
+// Custom validation isn't working correctly with float labels.
+// Float labels only cares if an input is required or not. Override with important.
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.custom-select.is-invalid {
+    border-color: $global-danger-color !important;
+}
+
+// Focus Styles
+.fl-form .fl-has-focus input.fl-input,
+.fl-form .fl-has-focus select.fl-select,
+.fl-form .fl-has-focus textarea.fl-textarea {
+    border: none;
+    box-shadow: inset 0 0 0 2px $global-primary-color;
+}
+
+// Invalid Styles
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.custom-select.is-invalid {
+    border: none;
+    box-shadow: inset 0 0 0 2px $global-danger-color;
+}
+// Focused
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.custom-select.is-invalid:focus {
+    border: none;
+    box-shadow: inset 0 0 0 2px darken($global-danger-color, 15%);
+}
+
+// Valid Styles
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.was-validated .custom-select:valid,
+.custom-select.is-valid {
+    border: none;
+    box-shadow: inset 0 0 0 2px $global-success-color;
+}
+// Focused
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus,
+.was-validated .custom-select:valid:focus,
+.custom-select.is-valid:focus {
+    border: none;
+    box-shadow: inset 0 0 0 2px darken($global-success-color, 15%);
+}
+
+.fl-form .fl-has-focus input.fl-input,
+.fl-form .fl-has-focus select.fl-select,
+.fl-form .fl-has-focus textarea.fl-textarea {
+    box-shadow: inset 0 0 0 2px $global-primary-color;
+}
+
+// When using outline borders, make sure the label has a background so the box shadow and text don't collide.
+.fl-form.fl-style-1 label.fl-label {
+    background-color: white;
+}

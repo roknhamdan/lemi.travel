@@ -1,0 +1,31 @@
+// Uses RFS package - https://github.com/MartijnCuppens/rfs
+// Until RFS is implemented - https://github.com/twbs/bootstrap/pull/23816
+// Taken from bootstrap's _variables.scss
+
+body {
+    @include responsive-font-size($global-font-size-base);
+}
+h1,
+.h1 {
+    @include responsive-font-size($global-font-size-base * 2.5);
+}
+h2,
+.h2 {
+    @include responsive-font-size($global-font-size-base * 2);
+}
+h3,
+.h3 {
+    @include responsive-font-size($global-font-size-base * 1.75);
+}
+h4,
+.h4 {
+    @include responsive-font-size($global-font-size-base * 1.5);
+}
+h5,
+.h5 {
+    @include responsive-font-size($global-font-size-base * 1.25);
+}
+h6,
+.h6 {
+    @include responsive-font-size($global-font-size-base);
+}

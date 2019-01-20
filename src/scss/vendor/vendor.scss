@@ -1,0 +1,10 @@
+// Some vendors name their packages with a .css extension which prevents them from being imported correctly.
+// Specify their extension for SCSS to successfully import it.
+// Bootstrap
+@import 'bootstrap/bootstrap';
+// Responsive Font Sizes
+@import 'rfs/rfs';
+// Owl Carousel
+@import 'owl.carousel/owl.carousel';
+// Coupled Custom SCSS that Require more than one dependancy.
+@import '_coupled/coupled';

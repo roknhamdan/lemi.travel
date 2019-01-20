@@ -1,0 +1,354 @@
+<!-- When developing, check all partials to see if they match the development requirement -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Prevent caching during testing -->
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <!-- Title -->
+        <title>Lemi - Save Local Experiences</title>
+        <!-- Favicon -->
+        <link rel="icon" sizes="192x192" href="img/favicon-new.png" />
+        <!-- Bundled CSS -->
+        <link rel="stylesheet" href="css/bundle.css" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <span id="navbar-logo-container" class="navbar-brand px-3 py-2">
+                @@include('dist/img/logo.svg')
+            </span>
+            <a href="" class="ml-auto nav-link px-3 py-2 font-weight-bold"
+                >Download for iOS</a
+            >
+        </nav>
+
+        <!-- Hero Section -->
+        <!-- Paddings to match the height -->
+        <!-- Eliminate margins ond paddings on once breakpoint is reached -->
+        <div id="hero" class="container-fluid">
+            <div class="row pt-md-5">
+                <!-- Tagline -->
+                <div
+                    class="d-flex col-md-6 pt-md-5 px-lg-5 px-md-4 justify-content-center justify-content-md-end"
+                >
+                    <div
+                        class="d-flex flex-column h-100 align-items-center px-lg-5 px-md-4"
+                    >
+                        <!-- Force line breaks -->
+                        <h1
+                            class="text-white text-center my-4 pt-5 pt-md-5 d-sm-none d-block"
+                        >
+                            Save recommendations from your friends
+                        </h1>
+                        <h1
+                            class="text-white text-center my-4 pt-md-5 d-none d-sm-block"
+                        >
+                            All your journeys, <br />
+                            past and future, <br />
+                            mapped in one place
+                        </h1>
+                        <div class="app-badge d-none d-sm-block mt-3 mb-5">
+                            <a href=""> @@include('dist/img/app_badge.svg') </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- App -->
+                <div
+                    class="d-flex col-md-6 pt-md-5 px-lg-5 px-md-4 justify-content-center justify-content-md-start"
+                >
+                    <div class="d-flex h-100 align-items-end px-lg-5 px-md-4">
+                        <img class="img-fluid" src="img/list.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seperate Hero Section -->
+        <div class="container-fluid text-white section-padding alt-dark-bg">
+            <div class="row">
+                <div
+                    class="col d-flex flex-column justify-content-center align-items-center"
+                >
+                    <div class="logo-container my-3">
+                        @@include('dist/img/logo-sm.svg')
+                    </div>
+                    <!-- Prevent the content from overflowing to the entire screen width -->
+                    <div class="mw-centered">
+                        <p class="h3 text-white text-center d-none d-sm-block">
+                            We built Lemi to make discovery of great local
+                            places easy, convenient, and personal, so you never
+                            miss out on amazing experiences waiting around the
+                            corner.
+                        </p>
+                        <p class="h3 text-white text-center d-sm-none">
+                            Our Mission is to renew your excitement of the world
+                            around you
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Lists -->
+        <!-- Specific Container with smaller padding -->
+        <div id="list-container" class="container section-padding">
+            <div id="lists" class="row">
+                <div class="col-12"><h1>Our favorite lists</h1></div>
+            </div>
+        </div>
+
+        <!-- Who we Are -->
+        <div class="container section-padding">
+            <div class="row ">
+                <div class="col-md-5">
+                    <img src="img/who-we-are.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md-6 pt-5">
+                    <h1 class="pt-5">Who we are</h1>
+                    <p>
+                        We believe that our differences should be celebrated;
+                        the world is more interesting and fun because everybody
+                        and every place are different. In this spirit, our
+                        community and platform ecosystem promotes the sharing of
+                        memories, escapades, and dreams. We work to make
+                        discovery easy, convenient, and personal, so you never
+                        miss out on those possibly life-changing experiences
+                        just waiting around the corner.
+                    </p>
+                    <br />
+                    <p>
+                        We help you see your city with fresh eyes. We help you
+                        feel at home everywhere else.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagarm Photos -->
+        <div id="instagram-section" class="container-fluid section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-white my-3">Lemi on Instagram</h1>
+                    </div>
+                    <div class="col-12"><div class="card-columns"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex w-100 justify-content-center">
+                        <!-- alert-black to set the link's color to black. -->
+                        <div class="mx-5 alert-dark bg-white">
+                            <a href="">
+                                <i
+                                    class="icon-instagram h3 mx-5 alert-link"
+                                ></i>
+                            </a>
+                        </div>
+                        <div class="mx-5 alert-dark bg-white">
+                            <a href="">
+                                <i class="icon-facebook h3 mx-5 alert-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="container section-padding">
+            <div class="row section-padding">
+                <div
+                    class="col d-flex flex-column justify-content-center align-items-center"
+                >
+                    <h1 class="display-4 text-primary">
+                        Lemi is better in your pocket
+                    </h1>
+                    <h6>
+                        Discover more & create your own Lists in our iOS App
+                    </h6>
+                    <div class="app-badge my-5">
+                        <a href="https://lemi.travel/app">
+                            @@include('dist/img/app_badge.svg')
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+            id="footer"
+            class="container-fluid section-padding alt-dark-bg text-white"
+        >
+            <div class="container">
+                <div class="row small">
+                    <div class="mx-3 col-md-4 col-lg-3">
+                        <span class="py-3 font-weight-bold"
+                            >FEATURED USERS</span
+                        >
+                        <ul class="list-unstyled my-5">
+                            <li class="my-2">
+                                <a href="" class="nounderline">@asundgren </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">@celine </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">@dave </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">@elaine </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">@jica </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">@matt </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">@mela </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mx-3 col-md-4 col-lg-3">
+                        <span class="py-3 font-weight-bold">TOP CITIES</span>
+                        <ul class="list-unstyled my-5">
+                            <li class="my-2">
+                                <a href="" class="nounderline">Hong Kong</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">Singapore</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">London</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">Manila</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">Niseko</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">Macau</a>
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline">Bangkok</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mx-3 col-md-4 col-lg-3">
+                        <span class="py-3 font-weight-bold">POPULAR LISTS</span>
+                        <ul class="list-unstyled my-5">
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Here's Hong Kong! - Hong Kong</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Big Dreams, Big Apple - New York City,
+                                    Manhattan</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Dreamy Dines - Global</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Manila Eats - Makati City, Manila</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Singapore: The Lion City - Singapore</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Hong Kong Hangs - Hong Kong</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a href="" class="nounderline"
+                                    >Lemi Share Our Favorites - Makati City</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="footer-logo">
+                            @@include('dist/img/logo-sm.svg')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Layout -->
+        <div
+            class="modal fade text-white"
+            id="instagram-photo"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="instagram-photo"
+            aria-hidden="true"
+        >
+            <!-- Controls -->
+            <div
+                class="js-carousel-controls position-fixed d-flex justify-content-between w-100 px-1 py-2 small noselect"
+            >
+                <!-- Pagination Indicator -->
+                <div class="">
+                    <span id="js-current-image" class="">1</span> /
+                    <span id="js-total-image" class=""></span>
+                </div>
+                <!-- Fullscreen and Close -->
+                <div class="button-cursor">
+                    <span id="js-fullscreen" class="mx-2"
+                        ><i class="icon-fullscreen h5"></i></span
+                    ><span id="js-close" class="mx-2"
+                        ><i class="icon-close h5"></i
+                    ></span>
+                </div>
+            </div>
+            <!-- Pagination Buttons -->
+
+            <div
+                id="carousel-pagination"
+                class="js-carousel-controls position-fixed d-flex justify-content-between w-100 px-1 noselect button-cursor"
+            >
+                <span id="js-previous" class="h5"
+                    ><i class="icon-arrow_back"></i
+                ></span>
+                <span id="js-next" class="h5"
+                    ><i class="icon-arrow_forward"></i
+                ></span>
+            </div>
+
+            <!-- Content -->
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-flex justify-content-between">
+                        <div class="owl-carousel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bundled JS -->
+        <script src="js/bundle.js"></script>
+    </body>
+</html>

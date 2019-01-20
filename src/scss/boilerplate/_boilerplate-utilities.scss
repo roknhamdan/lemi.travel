@@ -1,0 +1,80 @@
+// Add this class to any element which does not fill the screen in 4K resolution
+// Minimum Content Height Needed in 4K Resolution
+.bump-footer {
+    min-height: $minimumContentHeight;
+}
+
+// Prevent Selection
+.noselect {
+    user-select: none;
+}
+
+// No Underline Links
+.nounderline:hover,
+.nounderline:focus,
+.nounderline:active {
+    text-decoration: none !important;
+}
+
+// White Drop Shadow
+.shadow-lg-light {
+    // Copied values from shadow-lg
+    box-shadow: 0 1rem 3rem #fff;
+}
+
+// SVGs have set dimensions.
+// Responsiveness is controlled by the svg's parent container then passed on to it's child element.
+div[class^='svg-container'],
+div[class^='svg-container'] svg {
+    max-width: 100%;
+}
+
+.svg-container-sm > svg {
+    width: 100px;
+    height: 100px;
+}
+
+.svg-container-md > svg {
+    width: 200px;
+    height: 200px;
+}
+
+.svg-container-lg > svg {
+    width: 300px;
+    height: 300px;
+}
+
+.svg-container-xl > svg {
+    width: 400px;
+    height: 400px;
+}
+
+.svg-primary svg path {
+    fill: $global-primary-color;
+    stroke: none;
+}
+
+.svg-secondary svg path {
+    fill: $global-primary-color;
+    stroke: none;
+}
+
+.svg-black svg path {
+    fill: $global-dark-color;
+    stroke: none;
+}
+
+// Place a background on text.
+// Place padding, sizing and line height in order to place any type of background with bg-* classes and rounded-*classes
+// Set the size
+$text-background-base: 2rem;
+// Calculate remaining space for centering.
+$remaining-space-from-default-line-height: $text-background-base -
+    $global-line-height;
+// Actual class
+.text-background {
+    font-size: $text-background-base;
+    line-height: $text-background-base * 1.5;
+    width: $text-background-base * 1.5;
+    height: $text-background-base * 1.5;
+}
