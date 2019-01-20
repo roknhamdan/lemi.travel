@@ -41,7 +41,7 @@
 -   [Node.js](https://nodejs.org/en/)
 -   [gulp](https://gulpjs.com/)
 
-## In-browser frameworks
+## In-browser frameworks and libraries
 
 No constraints and business requirements were provided to produce a single web page.
 
