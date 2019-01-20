@@ -8563,7 +8563,9 @@ document.addEventListener('DOMContentLoaded', function () {
       instagramCarousel.trigger("to.owl.carousel", [clickedImg]);
       $(".modal").modal("show") // Exit fullscreen in case it's enabled when exiting from the fullscreen carousel.
       .on("hide.bs.modal", function () {
-        document.exitFullscreen();
+        if (screenfull.isFullscreen) {
+          screenfull.exit();
+        }
       });
     });
   })(); // Views

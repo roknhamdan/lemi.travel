@@ -139,7 +139,9 @@
             .modal(`show`)
             // Exit fullscreen in case it's enabled when exiting from the fullscreen carousel.
             .on(`hide.bs.modal`, () => {
-                document.exitFullscreen();
+                if (screenfull.isFullscreen) {
+                    screenfull.exit();
+                }
             });
     });
 })();
